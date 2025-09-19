@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>النموذج الذكي لوزارة النقل - لاهنت | GovTech Solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --primary:#0a7f49;
+    --primary-2:#0b5a37;
+    --accent:#12a66a;
+    --ink:#0e1a14;
+    --muted:#5f6b65;
+    --bg:#f5f7f6;
+    --card:#ffffff;
+    --border:#e7ecea;
+    --greenbar:#0a7f49;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--ink);font-family:'Cairo','Tajawal','Segoe UI','Tahoma','Arial',sans-serif;line-height:1.6}
+  .wrap{max-width:1200px;margin:0 auto;padding:28px}
+  .hero{
+    position:relative;border-radius:24px;padding:40px 28px;
+    background:radial-gradient(1200px 400px at 90% -20%, rgba(18,166,106,.15), transparent 60%),linear-gradient(135deg, #0a7f49 0%, #0b5a37 60%);
+    color:#fff;overflow:hidden;
+  }
+  .hero .badge{display:inline-block;padding:8px 14px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);border-radius:999px;font-weight:700;letter-spacing:.5px}
+  .hero h1{margin:14px 0 8px;font-size:38px;line-height:1.25}
+  .hero p{margin:0;font-size:18px;opacity:.95}
+  .kpi{display:flex;gap:18px;margin-top:24px;flex-wrap:wrap}
+  .kpi .tile{flex:1 1 280px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:18px;padding:18px 20px;backdrop-filter: blur(6px)}
+  .tile h3{margin:0 0 2px;font-size:14px;font-weight:700;opacity:.9}
+  .tile .big{display:flex;align-items:baseline;gap:8px}
+  .tile .big b{font-size:36px;line-height:1}
+  .tile .note{font-size:12px;opacity:.9;margin-top:6px}
+  .grid{display:grid;gap:18px;margin-top:28px;grid-template-columns:repeat(12,1fr)}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:22px 22px 18px;box-shadow:0 10px 30px rgba(0,0,0,.03)}
+  .card h2{margin:0 0 10px;font-size:22px}
+  .muted{color:var(--muted)}
+  .list{margin:10px 0 0;padding:0 18px}
+  .flow{display:grid;gap:16px;margin-top:8px;grid-template-columns:repeat(12,1fr);align-items:stretch;direction:rtl}
+  .flow .box{grid-column:span 4;background:#f7fbf9;border:1px solid var(--border);border-radius:14px;padding:14px}
+  .flow .hit{grid-column:span 4;background:#fff;border:2px solid var(--accent);border-radius:14px;padding:14px}
+  .col-6{grid-column:span 6}
+  .col-7{grid-column:span 7}
+  .col-5{grid-column:span 5}
+  .col-4{grid-column:span 4}
+  .col-8{grid-column:span 8}
+  .col-12{grid-column:span 12}
+  @media (max-width: 980px){
+    .col-6,.col-7,.col-5,.col-4,.col-8{grid-column:span 12}
+    .flow .box,.flow .hit{grid-column:span 12}
+  }
+  .cta-strip{background:#fff;border:1px solid var(--border);border-radius:18px;padding:8px}
+  .cta-inner{background:var(--greenbar);color:#fff;border-radius:12px;padding:14px 18px;text-align:center;font-weight:800;letter-spacing:.3px}
+  footer{margin:26px 0 6px;text-align:center;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <span class="badge">وزارة النقل × لاهنت</span>
+      <h1>النموذج الذكي لتوجيه خدمات وزارة النقل</h1>
+      <p>محرك أهلية وتوجيه فائق السرعة يختصر ملايين الاحتمالات إلى خدمة واحدة دقيقة — جاهز للتطبيق الفوري تحت إشراف هيئة الحكومة الرقمية.</p>
+
+      <div class="kpi">
+        <div class="tile">
+          <h3>حجم فضاء الحالات</h3>
+          <div class="big"><b>+2,100,000</b><span>احتمال</span></div>
+          <div class="note">يُقلّص تدريجيًا عبر أسئلة موجهة حتى يصل إلى خدمة واحدة.</div>
+        </div>
+        <div class="tile">
+          <h3>زمن الوصول للنتيجة</h3>
+          <div class="big"><b>&lt; 10</b><span>ثوانٍ</span></div>
+          <div class="note">من أول تفاعل حتى التوجيه للخدمة أو الجهة الصحيحة.</div>
+        </div>
+        <div class="tile">
+          <h3>جاهزية التنفيذ</h3>
+          <div class="big"><b>جاهز</b><span>على خدمات وزارة النقل</span></div>
+          <div class="note">مبني على جميع خدمات وزارة النقل الفعلية – جاهز للتشغيل.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <!-- عن لاهنت -->
+      <div class="card col-7">
+        <h2>عن لاهنت (GovTech Solutions)</h2>
+        <ul class="list">
+          <li>شركة تقنية سعودية رائدة في أتمتة الخدمات الحكومية باستخدام <b>الذكاء الاصطناعي (AI)</b> و<b>أتمتة العمليات الروبوتية (RPA)</b>، ومنصة وصول موحد لخدمات الأعمال.</li>
+          <li>رؤية واضحة للتحول الرقمي ورفع كفاءة الخدمة العامة، مع تركيز على تبسيط الإجراءات والدمج الكامل بين المنصات.</li>
+          <li><b>13</b> أصلًا معرفيًا وبراءات عمليات مملوكة، وتكاملات واجهات APIs مع منصات حكومية متعددة.</li>
+          <li>اعتمادات وشهادات دولية في الأمن والجودة وإدارة الخدمات، وتقدير من جهات تنظيمية وطنية.</li>
+        </ul>
+      </div>
+
+      <div class="card col-5">
+        <h2>الفئة المستهدفة</h2>
+        <ul class="list">
+          <li>المواطنون والمقيمون (المستفيد النهائي).</li>
+          <li>موظفو الخدمة المدنية في أقسام الاستقبال والقنوات الإلكترونية.</li>
+        </ul>
+      </div>
+
+      <!-- الحل المبتكر - ثلاثة مستطيلات في نفس السطر تبدأ من اليمين -->
+      <div class="card col-12">
+        <h2>الحل المبتكر من لاهنت</h2>
+        <div class="flow">
+          <div class="box">
+            <b>محرك أهلية ذكي</b>
+            <p class="muted">يُقلّص أكثر من 2.1 مليون احتمال عبر أسئلة موجّهة. كل اختيار يستبعد آلاف الحالات حتى يبقى المسار الصحيح فقط.</p>
+          </div>
+          <div class="box">
+            <b>توجيه فوري</b>
+            <p class="muted">إذا كان المستفيد مؤهلًا: انتقال مباشر لتنفيذ الخدمة. إذا غير مؤهل: تحويل تلقائي للجهة الحكومية الصحيحة.</p>
+          </div>
+          <div class="hit">
+            <b>نتيجة واحدة في &lt; 10 ثوانٍ</b>
+            <p class="muted">خدمة واحدة دقيقة + مساعد ذكي باسم الخدمة يرشد المستخدم خطوة بخطوة.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- مساعد التوجيه الذكي -->
+      <div class="card col-12">
+        <h2>مساعد التوجيه الذكي</h2>
+        <ul class="list">
+          <li>يفهم اسم الخدمة بصيغه المختلفة (لهجات/اختصارات) ويطابقها مع الخدمة الرسمية.</li>
+          <li>يشرح مؤهلات التقديم والمتطلبات بالتفصيل، ويعرض "لماذا غير مؤهل" مع حلول بديلة.</li>
+          <li>يقدّم تعليمات دقيقة قبل التقديم (Checklist) لتقليل الرفض وإعادة العمل.</li>
+          <li>يدعم الأسئلة الحرة ويقترح الروابط الرسمية والنماذج ذات الصلة.</li>
+          <li>يتكامل مع سجلات الاستخدام لتحسين التوجيه دوريًا بناءً على البيانات.</li>
+        </ul>
+      </div>
+
+      <div class="card col-6">
+        <h2>الريادة والابتكار</h2>
+        <ul class="list">
+          <li>مبني على <b>جميع خدمات وزارة النقل الفعلية</b> – جاهز للإطلاق.</li>
+          <li>يغطي ملايين الحالات عبر Decision Tree واسع بمحرّك قواعد وأهلية.</li>
+          <li>يعالج الإحالات الخاطئة ويعيد التوازن للضغط على القنوات.</li>
+          <li>قابل للتوسّع والتعميم على باقي القطاعات.</li>
+          <li>امتثال وأمن وجودة بمستوى مؤسسي.</li>
+        </ul>
+      </div>
+
+      <div class="card col-6">
+        <h2>الأثر والفوائد المتوقعة</h2>
+        <ul class="list">
+          <li>خفض الإحالات الخاطئة ≥ <b>80%</b>.</li>
+          <li>تحويل زمن الوصول للخدمة من أيام إلى <b>ثوانٍ</b>.</li>
+          <li>رفع رضا المستفيدين إلى <b>&gt;95%</b>.</li>
+          <li>تخفيف العبء على موظفي الاستقبال والقنوات الإلكترونية.</li>
+          <li>تقارير لحظية وبيانات نظيفة لصُنّاع القرار.</li>
+        </ul>
+      </div>
+
+      <!-- شريط دعائي أخضر داخل خلفية بيضاء -->
+      <div class="cta-strip col-12">
+        <div class="cta-inner">
+          جاهز للتجربة (Pilot) • تكامل سريع • مؤشرات أداء واضحة (KPIs)
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © شركة لاهنت لخدمات الأعمال — Govtech solution | تواصل: info@lahint.sa – 0133302007
+    </footer>
+  </div>
+</body>
+</html>

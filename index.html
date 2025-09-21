@@ -55,6 +55,16 @@
   .cta-strip{background:#fff;border:1px solid var(--border);border-radius:18px;padding:8px}
   .cta-inner{background:var(--greenbar);color:#fff;border-radius:12px;padding:14px 18px;text-align:center;font-weight:800;letter-spacing:.3px}
   footer{margin:26px 0 6px;text-align:center;color:var(--muted);font-size:13px}
+
+  /* --- Added for YouTube video + CTA --- */
+  .hero-media{margin-top:18px}
+  .video-wrap{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:16px;overflow:hidden}
+  .video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .cta-row{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
+  .cta-btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;background:#fff;color:var(--greenbar);border-radius:999px;border:1px solid rgba(255,255,255,.28);font-weight:800;text-decoration:none;box-shadow:0 8px 20px rgba(0,0,0,.07);letter-spacing:.2px}
+  .cta-btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(0,0,0,.12)}
+  .cta-btn svg{flex:0 0 auto}
+
 </style>
 </head>
 <body>
@@ -81,6 +91,27 @@
           <div class="note">مبني على جميع خدمات وزارة النقل الفعلية – جاهز للتشغيل.</div>
         </div>
       </div>
+      <div class="hero-media">
+        <div class="video-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/dXc0gJanpJ4?autoplay=1&mute=1&rel=0&modestbranding=1&playsinline=1"
+            title="فيديو: النموذج الذكي لوزارة النقل — لاهنت"
+            allow="autoplay; encrypted-media; picture-in-picture; clipboard-write; gyroscope"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <div class="cta-row">
+        <a class="cta-btn" href="https://accma44-netizen.github.io/MOT/" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14"></path>
+            <path d="M13 5l7 7-7 7"></path>
+          </svg>
+          <span>اطلب الخدمة الآن</span>
+        </a>
+      </div>
+
     </section>
 
     <section class="grid">
